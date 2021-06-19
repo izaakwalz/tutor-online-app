@@ -13,6 +13,10 @@ const useStyles = makeStyles(() =>
         '-moz-osx-font-smoothing': 'grayscale',
         height: '100%',
         width: '100%',
+        fontSize: 14,
+        fontFamily: 'Roboto, Sans',
+        letterSpacing: 2.5,
+        lineHeight: 62.4,
       },
       body: {
         backgroundColor: '#f4f6f8',
