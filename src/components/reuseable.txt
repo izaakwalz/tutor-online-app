@@ -1,0 +1,106 @@
+	{/* {userInfo.role === 'tutor' ? (
+							<Button
+								size='medium'
+								variant='outlined'
+								className={classes.logout}
+								color='secondary'
+								component='a'
+								href='/instructor'
+							>
+								INSTRUCTOR
+							</Button>
+						) : (
+							<Button
+								size='small'
+								variant='outlined'
+								className={classes.logout}
+								color='secondary'
+							>
+								Become a Tutor
+							</Button>
+						)} */}
+// nav one
+                        				{/* <List className={classes.navigationContainer}> */}
+						{/* <ListItem className={classes.listItem}>
+								<Typography
+									variant='h5'
+									color='textPrimary'
+									className={classes.listItemText}
+									component='a'
+									href='/en'
+								>
+									Home
+								</Typography>
+							</ListItem> */}
+						{/* </List> */}
+
+// function ListItemLink(props) {
+//     return <ListItem button component={Link} {...props} />;
+//   }
+
+				{/* <StyledMenuItem to='/users'>
+          <ListItemIcon>
+            <PeopleIcon fontSize='small' />
+          </ListItemIcon>
+          <ListItemText primary='Users' />
+        </StyledMenuItem> */}
+							{/* <List className={classes.navigationContainer}>
+              <ListItem className={classes.listItem}>
+                <Typography
+                  variant='h5'
+                  color='textPrimary'
+                  className={classes.listItemText}
+                  component='a'
+                  href='/en/app'
+                >
+                  Tutorials
+                </Typography>
+              </ListItem>
+            </List> */}
+				/**
+	 * route used before
+	 * {
+	 * { path: '/', element: <Navigate to='/en' /> },
+	 * { path: '/en', element: <MainPage /> },
+	 * { path: '/', element: <Navigate to='app' /> },
+	 * }
+	 */
+	 
+  // const unProcessedAnswers = selectedAnswers.map(({ answer, question }) => {
+  //   const relatedQuestion = testData.find(
+  //     (category) => category.question === question
+  //   );
+  //   // return relatedQuestion;
+  //   // if (relatedQuestion.correct_answer === answer) {
+  //   //   return { correctAnswer: answer, isCorrect: true, question };
+  //   // }
+  //   const ans = relatedQuestion.options.find((ans) => ans.option === answer);
+
+  //   if (ans.answer === true) {
+  //     return { correctAnswer: answer, isCorrect: true, question };
+  //   }
+  //   return {
+  //     correctAnswer: relatedQuestion.ans,
+  //     wrongAnswer: answer,
+  //     isCorrect: false,
+  //     question,
+  //   };
+  // });
+
+		{/* <Fab
+          aria-label='dark_mood_switch'
+          className={clsx(classes.fab, classes.fabClor)}
+          color='inherit'
+        >
+          <ToggleButton
+            value='check'
+            selected={darkMode}
+            className={classes.button}
+            onChange={() => setDarkMode(!darkMode)}
+          >
+            {darkMode ? <Brightness2 /> : <Brightness4 />}
+          </ToggleButton>
+        </Fab> */}
+		import ToggleButton from '@material-ui/lab/ToggleButton';
+import { Brightness4, Brightness2 } from '@material-ui/icons';
+import clsx from 'clsx';
