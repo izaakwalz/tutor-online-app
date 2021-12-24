@@ -16,7 +16,7 @@ import ReactPlayer from 'react-player/lazy';
 import useStyles from './styles';
 import moment from 'moment';
 import Meta from '../../components/Meta';
-import { subjectInfo } from '../../actions/subject-actions';
+import { subjectInfo } from '../../actions/subject.actions';
 import { GetTestScore } from '../../actions/progress.actions';
 import TestQuestions from '../../components/TestQustions/TestQuestions';
 import StaticProgress from '../../components/StaticProgress';

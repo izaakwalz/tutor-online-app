@@ -40,14 +40,7 @@ const Hero = (props) => {
         spacing={4}
         direction={isMd ? 'row' : 'column-reverse'}
       >
-        <Grid
-          item
-          container
-          alignItems='center'
-          xs={12}
-          md={6}
-          data-aos={'fade-up'}
-        >
+        <Grid item container alignItems='center' xs={12} md={6}>
           <SectionHeader
             title={
               <span>

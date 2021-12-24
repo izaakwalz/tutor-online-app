@@ -10,7 +10,7 @@ import {
   USER_GRADE_SUCCESS,
   USER_GRADE_FAIL,
 } from '../constants/progress-constants';
-import { logout } from './auth-actions';
+import { logout } from './auth.actions';
 
 export const GetTestScore = (id) => async (dispatch) => {
   try {
@@ -87,7 +87,7 @@ export const listGrade = async (dispatch) => {
 
     const config = { headers: { Authorization: `Bearer ${user.token}` } };
 
-    const { data } = await api.get(`/api/v1/users`, config);
+    const { data } = await api.get(`/api/v1/users/grade`, config);
 
     dispatch({ type: USER_GRADE_SUCCESS, payload: data });
   } catch (error) {
