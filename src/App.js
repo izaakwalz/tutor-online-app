@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRoutes } from 'react-router-dom';
-import { ThemeProvider, createMuiTheme, makeStyles, colors } from '@material-ui/core';
+import { ThemeProvider, createTheme, makeStyles, colors } from '@material-ui/core';
 import shadows from './theme/shadows';
 import typography from './theme/typography';
 import routes from './routes';
@@ -37,9 +37,10 @@ const App = () => {
 
 	useEffect(() => {
 		if (userUsesDark) setDarkMode(true);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
-	const theme = createMuiTheme({
+	const theme = createTheme({
 		spacing: 4,
 		shadows,
 		typography,

@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Section } from '../../components/elements';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-	Introduction,
-	PreTestQuestions,
-	PreTestResult,
-	TOPQ,
-} from './components';
+import { Introduction, PreTestQuestions, PreTestResult, TOPQ } from './components';
 import { toast } from 'react-toastify';
 import { CircularProgress, makeStyles } from '@material-ui/core';
 import { TestStatecontext } from './components/helpers/Context';
@@ -34,6 +29,7 @@ const PreTest = () => {
 		if (error) {
 			toast.dark(error);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [dispatch, upgrade]);
 
 	return (
@@ -50,11 +46,7 @@ const PreTest = () => {
 					{testState === 'introduction' && <Introduction />}
 					{testState === 'pre_test' && <PreTestQuestions />}
 					{testState === 'info' && <TOPQ upgrade={dispatch} />}
-					{loading ? (
-						<CircularProgress size='4em' />
-					) : (
-						testState === 'results' && <PreTestResult />
-					)}
+					{loading ? <CircularProgress size='4em' /> : testState === 'results' && <PreTestResult />}
 					{/* {testState === 'results' && <PreTestResult />} */}
 				</TestStatecontext.Provider>
 			</Section>

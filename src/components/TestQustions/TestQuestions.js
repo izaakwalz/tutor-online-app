@@ -20,6 +20,7 @@ const TestQuestions = ({ testData, subID, currentQuizStep, setCurrentQuizStep })
 		if (error) {
 			toast.dark(error);
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [dispatch, grade]);
 
 	const handleResult = (e) => {
