@@ -3,7 +3,7 @@
 TutorOnline
 Tutor Online is an online maths tutoring application where undergraduates can watch courses on maths and take test under each course.
 stundents can also comunicate with their tutors and ask question by chatiing them up in the application tutors can also teach maths and give test to stundents. 
-#### <b>Live site:</b> [TutorOnline](https://tutoronline.netlify.app/en)
+#### <b>Live site:</b> [TutorOnline](https://tutoronline.netlify.app)
 #### <b>Link to api:</b> [TutorOnline-api](http://zxi4gxhng.herokuapp.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
